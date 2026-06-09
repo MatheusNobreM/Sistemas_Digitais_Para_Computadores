@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_processador_top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_processador_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,000.000 ns"></ZoomEndTime>
+      <Cursor1Time time="1,000.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="225"></NameColumnWidth>
+      <ValueColumnWidth column_width="103"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="10" />
+   <wvobject type="logic" fp_name="/tb_processador_top/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_processador_top/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_processador_top/in_port">
+      <obj_property name="ElementShortName">in_port[15:0]</obj_property>
+      <obj_property name="ObjectShortName">in_port[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_processador_top/out_port">
+      <obj_property name="ElementShortName">out_port[15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_port[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_processador_top/dut/inst_datapath/SP">
+      <obj_property name="ElementShortName">SP[15:0]</obj_property>
+      <obj_property name="ObjectShortName">SP[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_processador_top/dut/inst_datapath/out_port">
+      <obj_property name="ElementShortName">out_port[15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_port[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_processador_top/dut/inst_datapath/inst_rf/reg_array">
+      <obj_property name="ElementShortName">reg_array[0:7][15:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_array[0:7][15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_processador_top/dut/inst_datapath/w_ram_out">
+      <obj_property name="ElementShortName">w_ram_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">w_ram_out[15:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_processador_top/dut/inst_fsm/RAM_wr">
+      <obj_property name="ElementShortName">RAM_wr</obj_property>
+      <obj_property name="ObjectShortName">RAM_wr</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_processador_top/dut/inst_datapath/w_ram_addr">
+      <obj_property name="ElementShortName">w_ram_addr[15:0]</obj_property>
+      <obj_property name="ObjectShortName">w_ram_addr[15:0]</obj_property>
+   </wvobject>
+</wave_config>
