@@ -3,8 +3,8 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Mon Jun 15 16:21:47 2026
-# Process ID         : 4292
+# Start of session at: Mon Jun 15 15:44:49 2026
+# Process ID         : 22212
 # Current directory  : C:/Users/Matheus/Documents/Faculdade/Sistemas digitais para computadores/Processador_16bit_Zybo/TESTE_DA_ZYBO/TESTE_DA_ZYBO
 # Command line       : vivado.exe -mode batch -source program.tcl
 # Log file           : C:/Users/Matheus/Documents/Faculdade/Sistemas digitais para computadores/Processador_16bit_Zybo/TESTE_DA_ZYBO/TESTE_DA_ZYBO/vivado.log
@@ -19,7 +19,7 @@
 # Host memory        : 16953 MB
 # Swap memory        : 7855 MB
 # Total Virtual      : 24808 MB
-# Available Virtual  : 2718 MB
+# Available Virtual  : 2640 MB
 #-----------------------------------------------------------
 source program.tcl
 # set script_dir [file dirname [file normalize [info script]]]
@@ -51,7 +51,7 @@ INFO: [Labtools 27-2221] Launch Output:
 
 
 
-connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 371.059 ; gain = 0.992
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 371.059 ; gain = 0.992
 # set targets [get_hw_targets *]
 # if {[llength $targets] == 0} {
 #     close_hw_manager
@@ -77,4 +77,4 @@ INFO: [Labtools 27-1435] Device xc7z010 (JTAG device index = 1) is not programme
 # program_hw_devices $device
 INFO: [Labtools 27-3164] End of startup status: HIGH
 # close_hw_manager
-INFO: [Common 17-206] Exiting Vivado at Mon Jun 15 16:22:04 2026...
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 15 15:45:11 2026...
