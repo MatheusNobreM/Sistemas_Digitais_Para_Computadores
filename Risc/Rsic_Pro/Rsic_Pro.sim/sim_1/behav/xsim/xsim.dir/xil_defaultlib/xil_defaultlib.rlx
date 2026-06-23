@@ -1,0 +1,16 @@
+0.7
+2020.2
+Nov  8 2024
+22:36:57
+C:/Users/Matheus/Documents/Faculdade/Sistemas digitais para computadores/Risc/Rsic_Pro/Rsic_Pro.sim/sim_1/behav/xsim/glbl.v,1724786425,verilog,,,,glbl,,,,,,,,
+C:/Users/Matheus/Documents/Faculdade/Sistemas digitais para computadores/Risc/componentes/address_mux.v,1782147647,verilog,,C:/Users/Matheus/Documents/Faculdade/Sistemas digitais para computadores/Risc/componentes/alu_inst.v,,address_mux,,,,,,,,
+C:/Users/Matheus/Documents/Faculdade/Sistemas digitais para computadores/Risc/componentes/alu_inst.v,1782147647,verilog,,C:/Users/Matheus/Documents/Faculdade/Sistemas digitais para computadores/Risc/componentes/controller_inst.v,,alu_inst,,,,,,,,
+C:/Users/Matheus/Documents/Faculdade/Sistemas digitais para computadores/Risc/componentes/controller_inst.v,1782147647,verilog,,C:/Users/Matheus/Documents/Faculdade/Sistemas digitais para computadores/Risc/componentes/counter_clk.v,,controller_inst,,,,,,,,
+C:/Users/Matheus/Documents/Faculdade/Sistemas digitais para computadores/Risc/componentes/counter_clk.v,1782147647,verilog,,C:/Users/Matheus/Documents/Faculdade/Sistemas digitais para computadores/Risc/componentes/counter_pc.v,,counter_clk,,,,,,,,
+C:/Users/Matheus/Documents/Faculdade/Sistemas digitais para computadores/Risc/componentes/counter_pc.v,1782147647,verilog,,C:/Users/Matheus/Documents/Faculdade/Sistemas digitais para computadores/Risc/componentes/cpu_top.v,,counter_pc,,,,,,,,
+C:/Users/Matheus/Documents/Faculdade/Sistemas digitais para computadores/Risc/componentes/cpu_top.v,1782147647,verilog,,C:/Users/Matheus/Documents/Faculdade/Sistemas digitais para computadores/Risc/componentes/driver_inst.v,,cpu_top,,,,,,,,
+C:/Users/Matheus/Documents/Faculdade/Sistemas digitais para computadores/Risc/componentes/driver_inst.v,1782147647,verilog,,C:/Users/Matheus/Documents/Faculdade/Sistemas digitais para computadores/Risc/componentes/memory_inst.v,,driver_inst,,,,,,,,
+C:/Users/Matheus/Documents/Faculdade/Sistemas digitais para computadores/Risc/componentes/memory_inst.v,1782147647,verilog,,C:/Users/Matheus/Documents/Faculdade/Sistemas digitais para computadores/Risc/componentes/register_ac.v,,memory_inst,,,,,,,,
+C:/Users/Matheus/Documents/Faculdade/Sistemas digitais para computadores/Risc/componentes/register_ac.v,1782147647,verilog,,C:/Users/Matheus/Documents/Faculdade/Sistemas digitais para computadores/Risc/componentes/register_ir.v,,register_ac,,,,,,,,
+C:/Users/Matheus/Documents/Faculdade/Sistemas digitais para computadores/Risc/componentes/register_ir.v,1782147647,verilog,,C:/Users/Matheus/Documents/Faculdade/Sistemas digitais para computadores/Risc/tb/tb_cpu_top.v,,register_ir,,,,,,,,
+C:/Users/Matheus/Documents/Faculdade/Sistemas digitais para computadores/Risc/tb/tb_cpu_top.v,1782147647,verilog,,,,tb_cpu_top,,,,,,,,

@@ -24,7 +24,7 @@ module fsm (
     output reg         SP_inc,
     output reg         SP_dec,
     output reg         addr_sel,
-    output reg         out_wr     // <-- NOVO: Permissão para escrever na porta OUT
+    output reg         out_wr     // Permissão para escrever na porta OUT
 );
 
     parameter FETCH   = 2'b00;

@@ -3,12 +3,12 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Mon Jun 22 15:42:18 2026
-# Process ID         : 9248
-# Current directory  : C:/Users/Matheus/Documents/Faculdade/Sistemas digitais para computadores/Processador_16bit_Zybo/TESTE_DA_ZYBO/TESTE_DA_ZYBO
+# Start of session at: Tue Jun 23 16:39:08 2026
+# Process ID         : 27316
+# Current directory  : C:/Users/Matheus/Documents/Faculdade/Sistemas digitais para computadores/Risc
 # Command line       : vivado.exe -mode batch -source program.tcl
-# Log file           : C:/Users/Matheus/Documents/Faculdade/Sistemas digitais para computadores/Processador_16bit_Zybo/TESTE_DA_ZYBO/TESTE_DA_ZYBO/vivado.log
-# Journal file       : C:/Users/Matheus/Documents/Faculdade/Sistemas digitais para computadores/Processador_16bit_Zybo/TESTE_DA_ZYBO/TESTE_DA_ZYBO\vivado.jou
+# Log file           : C:/Users/Matheus/Documents/Faculdade/Sistemas digitais para computadores/Risc/vivado.log
+# Journal file       : C:/Users/Matheus/Documents/Faculdade/Sistemas digitais para computadores/Risc\vivado.jou
 # Running On         : Suporte
 # Platform           : Windows Server 2016 or Windows 10
 # Operating System   : 26200
@@ -17,9 +17,9 @@
 # CPU Physical cores : 4
 # CPU Logical cores  : 8
 # Host memory        : 16953 MB
-# Swap memory        : 3623 MB
-# Total Virtual      : 20577 MB
-# Available Virtual  : 1753 MB
+# Swap memory        : 4704 MB
+# Total Virtual      : 21658 MB
+# Available Virtual  : 3377 MB
 #-----------------------------------------------------------
 source program.tcl
 # set script_dir [file dirname [file normalize [info script]]]
@@ -51,16 +51,16 @@ INFO: [Labtools 27-2221] Launch Output:
 
 
 
-connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 371.066 ; gain = 0.961
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 371.566 ; gain = 1.000
 # set targets [get_hw_targets *]
 # if {[llength $targets] == 0} {
 #     close_hw_manager
 #     error "Nenhum alvo JTAG encontrado. Verifique se a Zybo esta ligada, se o cabo USB/JTAG esta conectado e se os drivers Digilent/Xilinx estao instalados."
 # }
 # puts "Alvos JTAG encontrados: $targets"
-Alvos JTAG encontrados: localhost:3121/xilinx_tcf/Digilent/210279787986A
+Alvos JTAG encontrados: localhost:3121/xilinx_tcf/Digilent/210279778457A
 # open_hw_target [lindex $targets 0]
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210279787986A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210279778457A
 # set devices [get_hw_devices]
 # if {[llength $devices] == 0} {
 #     close_hw_manager
@@ -72,9 +72,11 @@ INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/
 # }
 # current_hw_device $device
 # refresh_hw_device $device
-INFO: [Labtools 27-1435] Device xc7z010 (JTAG device index = 1) is not programmed (DONE status = 0).
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
 # set_property PROGRAM.FILE $bitstream_file $device
 # program_hw_devices $device
 INFO: [Labtools 27-3164] End of startup status: HIGH
+# puts "Placa programada com: $bitstream_file"
+Placa programada com: C:/Users/Matheus/Documents/Faculdade/Sistemas digitais para computadores/Risc/top.bit
 # close_hw_manager
-INFO: [Common 17-206] Exiting Vivado at Mon Jun 22 15:42:36 2026...
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 23 16:39:27 2026...

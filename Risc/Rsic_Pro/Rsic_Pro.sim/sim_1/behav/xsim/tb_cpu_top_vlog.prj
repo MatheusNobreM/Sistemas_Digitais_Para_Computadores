@@ -1,0 +1,19 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../componentes/address_mux.v" \
+"../../../../../componentes/alu_inst.v" \
+"../../../../../componentes/controller_inst.v" \
+"../../../../../componentes/counter_clk.v" \
+"../../../../../componentes/counter_pc.v" \
+"../../../../../componentes/cpu_top.v" \
+"../../../../../componentes/driver_inst.v" \
+"../../../../../componentes/memory_inst.v" \
+"../../../../../componentes/register_ac.v" \
+"../../../../../componentes/register_ir.v" \
+"../../../../../tb/tb_cpu_top.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

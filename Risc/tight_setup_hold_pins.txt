@@ -1,0 +1,16 @@
++====================+===================+==========================================+
+| Launch Setup Clock | Launch Hold Clock | Pin                                      |
++====================+===================+==========================================+
+| sys_clk_pin        | sys_clk_pin       | cpu/pc/pc_addr_reg[2]/D                  |
+| sys_clk_pin        | sys_clk_pin       | cpu/pc/pc_addr_reg[1]/D                  |
+| sys_clk_pin        | sys_clk_pin       | cpu/pc/pc_addr_reg[7]/D                  |
+| sys_clk_pin        | sys_clk_pin       | cpu/pc/pc_addr_reg[5]/D                  |
+| sys_clk_pin        | sys_clk_pin       | cpu/pc/pc_addr_reg[4]/D                  |
+| sys_clk_pin        | sys_clk_pin       | cpu/pc/pc_addr_reg[0]/D                  |
+| sys_clk_pin        | sys_clk_pin       | cpu/mem/ram_reg_0_255_6_6/RAMS64E_A/ADR2 |
+| sys_clk_pin        | sys_clk_pin       | cpu/mem/ram_reg_0_255_6_6/RAMS64E_B/ADR2 |
+| sys_clk_pin        | sys_clk_pin       | cpu/mem/ram_reg_0_255_6_6/RAMS64E_C/ADR2 |
+| sys_clk_pin        | sys_clk_pin       | cpu/mem/ram_reg_0_255_6_6/RAMS64E_D/ADR2 |
+| sys_clk_pin        | sys_clk_pin       | cpu/mem/ram_reg_0_255_8_8/RAMS64E_B/ADR1 |
+| sys_clk_pin        | sys_clk_pin       | cpu/mem/ram_reg_0_255_8_8/RAMS64E_A/ADR1 |
++--------------------+-------------------+------------------------------------------+

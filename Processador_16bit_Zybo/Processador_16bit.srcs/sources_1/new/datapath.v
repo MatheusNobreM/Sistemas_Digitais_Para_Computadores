@@ -51,7 +51,7 @@ module datapath (
     wire [15:0] w_jump_target;
     assign w_jump_target = w_pc_out + Immed;
 
-    // --- MUX DE DADOS DA RAM (A CORREÇÃO DO ERRO) ---
+    // --- MUX DE DADOS DA RAM  ---
     // Se addr_sel=1 (Pilhas), gravamos Rm. Se addr_sel=0 (Store), gravamos Rn.
     wire [15:0] w_ram_din = addr_sel ? w_rm_out : w_rn_out;
 
