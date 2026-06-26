@@ -1,4 +1,4 @@
-module counter_pc #(parameter ADDR_WIDTH = 8) (
+module counter_pc #(parameter ADDR_WIDTH = 5) (
     input wire clk,
     input wire rst,
     input wire ld_pc,

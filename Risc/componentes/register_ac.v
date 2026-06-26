@@ -1,4 +1,4 @@
-module register_ac #(parameter DATA_WIDTH = 16) (
+module register_ac #(parameter DATA_WIDTH = 8) (
     input wire clk,
     input wire rst,
     input wire ld_ac,

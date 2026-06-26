@@ -1,7 +1,7 @@
 module controller_inst (
-    input wire phase,        
-    input wire [3:0] opcode, 
-    input wire zero,         
+    input wire phase,
+    input wire [2:0] opcode, // opcode de 3 bits (ir_reg[7:5])
+    input wire zero,
     output reg rd, 
     output reg wr, 
     output reg ld_ir, 
@@ -13,14 +13,14 @@ module controller_inst (
     output reg sel
 );
 
-    localparam OP_LDA = 4'b0001;
-    localparam OP_STA = 4'b0010;
-    localparam OP_ADD = 4'b0011;
-    localparam OP_SUB = 4'b0100;
-    localparam OP_AND = 4'b0101;
-    localparam OP_JMP = 4'b0110; 
-    localparam OP_JZ  = 4'b0111; 
-    localparam OP_HLT = 4'b1111; 
+    localparam OP_HLT = 3'b000; // HLT passou de 0xF para 0 (so cabem 8 codigos em 3 bits)
+    localparam OP_LDA = 3'b001;
+    localparam OP_STA = 3'b010;
+    localparam OP_ADD = 3'b011;
+    localparam OP_SUB = 3'b100;
+    localparam OP_AND = 3'b101;
+    localparam OP_JMP = 3'b110;
+    localparam OP_JZ  = 3'b111;
 
     always @(*) begin
         rd = 0; wr = 0; ld_ir = 0; ld_ac = 0; 

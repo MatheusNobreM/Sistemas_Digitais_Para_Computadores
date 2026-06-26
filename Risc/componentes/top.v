@@ -5,11 +5,12 @@
 //
 //    clk -> clock de 125 MHz da placa
 //    rst -> BTN0 (reset do processador, ativo em alto)
-//    sw  -> chaves SW0..SW3  (entrada lida via "LDA 0xF0")
-//    led -> LD0..LD3         (saida escrita via "STA 0xF1")
+//    sw  -> chaves SW0..SW3  (entrada lida via "LDA 0x1E")
+//    led -> LD0..LD3         (saida escrita via "STA 0x1F")
 //
-//  Programa atual: loop  LDA chaves -> STA leds -> JMP 0
-//  (os LEDs seguem as chaves, mas passando pelo processador)
+//  Programa atual: LDA chaves -> STA leds -> HLT
+//  (amostra unica: ao sair do reset le as chaves, mostra nos LEDs e para.
+//   Para carregar um novo valor, ajuste as chaves e aperte o reset BTN0.)
 // =====================================================================
 module top (
     input  wire       clk,
@@ -18,17 +19,17 @@ module top (
     output wire [3:0] led
 );
 
-    wire [15:0] in_port;
-    wire [15:0] out_port;
-    wire        halt;
+    wire [7:0] in_port;
+    wire [7:0] out_port;
+    wire       halt;
 
-    assign in_port = {12'd0, sw};   // chaves nos 4 bits baixos da entrada
+    assign in_port = {4'd0, sw};    // chaves nos 4 bits baixos da entrada
     assign led     = out_port[3:0]; // 4 bits baixos da saida nos LEDs
 
     cpu_top #(
-        .DATA_WIDTH(16),
-        .ADDR_WIDTH(8),
-        .OPCODE_WIDTH(4)
+        .DATA_WIDTH(8),
+        .ADDR_WIDTH(5),
+        .OPCODE_WIDTH(3)
     ) cpu (
         .clk(clk),
         .rst(rst),

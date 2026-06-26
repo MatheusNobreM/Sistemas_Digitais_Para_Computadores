@@ -1,7 +1,7 @@
 module register_ir #(
-    parameter DATA_WIDTH = 16,   
-    parameter OPCODE_WIDTH = 4,  
-    parameter ADDR_WIDTH = 8     
+    parameter DATA_WIDTH = 8,    // palavra de 8 bits
+    parameter OPCODE_WIDTH = 3,  // opcode em ir_reg[7:5]
+    parameter ADDR_WIDTH = 5     // endereco em ir_reg[4:0]
 ) (
     input wire clk,
     input wire rst,

@@ -26,4 +26,5 @@ program:
 
 clean:
 	-del /q $(BITSTREAM) *.jou *.log *.pb *.dcp *.rpt 2>nul
-	-rmdir /s /q .Xil .cache 2>nul
+	-if exist .Xil rmdir /s /q .Xil
+	-if exist .cache rmdir /s /q .cache

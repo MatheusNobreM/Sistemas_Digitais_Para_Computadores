@@ -1,8 +1,8 @@
 `timescale 1ns / 1ps
 module cpu_top #(
-    parameter DATA_WIDTH = 16,
-    parameter ADDR_WIDTH = 8,
-    parameter OPCODE_WIDTH = 4
+    parameter DATA_WIDTH = 8,    // palavra de 8 bits
+    parameter ADDR_WIDTH = 5,    // endereco = 5 bits  -> ir_reg[4:0]
+    parameter OPCODE_WIDTH = 3   // opcode   = 3 bits  -> ir_reg[7:5]
 ) (
     input  wire                  clk,
     input  wire                  rst,
@@ -11,9 +11,9 @@ module cpu_top #(
     output wire                  halt_out
 );
 
-    // Enderecos de I/O mapeado em memoria
-    localparam [ADDR_WIDTH-1:0] SW_ADDR  = 8'hF0;  // entrada (chaves)
-    localparam [ADDR_WIDTH-1:0] LED_ADDR = 8'hF1;  // saida   (LEDs)
+    // Enderecos de I/O mapeado em memoria (precisam caber em 5 bits: 0..31)
+    localparam [ADDR_WIDTH-1:0] SW_ADDR  = 5'h1E;  // entrada (chaves)
+    localparam [ADDR_WIDTH-1:0] LED_ADDR = 5'h1F;  // saida   (LEDs)
 
     wire [DATA_WIDTH-1:0] data_bus;
     wire [DATA_WIDTH-1:0] mem_dout;    // dado lido da RAM

@@ -1,6 +1,6 @@
 module alu_inst #(
-    parameter DATA_WIDTH = 16, 
-    parameter OPCODE_WIDTH = 4
+    parameter DATA_WIDTH = 8,
+    parameter OPCODE_WIDTH = 3
 ) (
     input wire [DATA_WIDTH-1:0] ac_out,
     input wire [DATA_WIDTH-1:0] data,
@@ -9,11 +9,11 @@ module alu_inst #(
     output wire zero
 );
 
-    localparam OP_LDA = 4'b0001; 
-    localparam OP_STA = 4'b0010; 
-    localparam OP_ADD = 4'b0011; 
-    localparam OP_SUB = 4'b0100; 
-    localparam OP_AND = 4'b0101; 
+    localparam OP_LDA = 3'b001;
+    localparam OP_STA = 3'b010;
+    localparam OP_ADD = 3'b011;
+    localparam OP_SUB = 3'b100;
+    localparam OP_AND = 3'b101;
 
     always @(*) begin
         case (opcode)
